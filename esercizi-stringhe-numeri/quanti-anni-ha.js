@@ -11,3 +11,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const anno = 2022;
+const annoNascita = 1993;
+const cento = 100;
+
+var eta = anno - annoNascita;
+var anniCent = cento - eta;
+
+console.log(`Sono nato nel {$annoNascita} e nel {$anno} ho compiuto {$eta} anni, tra {$anniCent} anni ne avò {$cento}`);
