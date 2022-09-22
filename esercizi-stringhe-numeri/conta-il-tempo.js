@@ -13,7 +13,7 @@
   http://www.imparareaprogrammare.it
 */
 
-const secTot = 12560;
+var secTot = 12560;
 const secInMin = 60;
 const minInOra = 60;
 
