@@ -23,3 +23,5 @@ var gattiPerFila = 6;
 
 var nFile = Math.ceil(gatti / gattiPerFila);
 var gattiMancanti = (gattiPerFila * nFile) - gatti;
+
+console.log(`{$gatti} gatti in file per {$gattiPerFila} si unirono compatti in {$nFile} file. Nell'ultima fila mancavano {$gattiMancanti} gatti`);
