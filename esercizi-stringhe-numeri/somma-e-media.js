@@ -8,3 +8,13 @@
   
   http://www.imparareaprogrammare.it
 */
+
+var num = 5;
+var a = 5;
+var b = 10;
+var c = 13;
+var d = 22;
+var e = 35;
+
+var somma = a + b + c + d + e;
+var media = somma / num;
