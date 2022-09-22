@@ -12,3 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const secTot = 12560;
+const secInMin = 60;
+const minInOra = 60;
+
+var secInOra = secInMin * minInOra;
+var ore = Math.ceil(secTot / secInOra);
+var secInOre = secInOra * ore;
+var secRim = secTot - secInOre;
+var minuti = Math.ceil(secRim / secInMin);
+var secondi = secRim - (minuti * minInOra);
+
+console.log(`In {$secTot} ci sono {$ore} ore, {$minuti} minuti e {$secondi} secondi.`);
