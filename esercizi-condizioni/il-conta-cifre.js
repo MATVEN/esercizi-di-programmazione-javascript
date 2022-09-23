@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 26;
+var nToString = n.toString();
+var nCifre = nToString.length;
+
+if(nCifre == 1){
+  console.log('Questo numero ha ' + nCifre + ' cifra');
+}else{
+  console.log('Questo numero ha ' + nCifre + ' cifre');
+}
