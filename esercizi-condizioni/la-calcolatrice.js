@@ -28,3 +28,26 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var a = 5;
+var b = 8;
+var operazione = 'somma';
+
+
+switch(operazione){   
+  case 'somma':
+    console.log(a + b);
+    break;
+  case 'sottrazione':
+    console.log(a - b);
+    break;
+  case 'moltiplicazione':
+    console.log(a * b);
+    break;
+  case 'divisione':
+    console.log(a / b);
+    break;
+  default:
+    console.log('Operazione non valida');
+}
+
