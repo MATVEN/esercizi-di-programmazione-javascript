@@ -15,3 +15,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var numero = 37;
+
+if(numero % 2 == 0){
+  console.log(1)
+}else{
+  console.log(0)
+}
