@@ -24,7 +24,7 @@
 
 var scelta = 3;
 
-switch(){   
+switch(scelta){   
   case 1:
     console.log('Hai scelto il dolce Tiramisù');
     break;
