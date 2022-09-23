@@ -22,3 +22,31 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var giorno = 4;
+
+switch(giorno){   
+  case 1:
+    console.log('Oggi è Lunedì');
+    break;
+  case 2:
+    console.log('Oggi è Martedì');
+    break;
+  case 3:
+    console.log('Oggi è Mercoledì');
+    break;
+  case 4:
+    console.log('Oggi è Giovedì');
+    break;
+    case 1:
+    console.log('Oggi è Venerdì');
+    break;
+  case 2:
+    console.log('Oggi è Sabato');
+    break;
+  case 3:
+    console.log('Oggi è Domenica');
+    break;
+  default:
+    console.log('Errore! Giorno della settimana non valido!');
+}
