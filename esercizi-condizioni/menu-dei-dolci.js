@@ -38,7 +38,7 @@ switch(scelta){
     console.log('Hai scelto il dolce Macedonia');
     break;
   default:
-    console.log('Dolce non disponibile ');
+    console.log('Dolce non disponibile');
 }
 
 
