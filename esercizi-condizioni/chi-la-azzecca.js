@@ -19,3 +19,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var giocatoreA = 7;
+var giocatoreB = 10;
+var numero = Math.floor(Math.random() * 101);
+var diffA = Math.abs(numero - giocatoreA);
+var diffB = Math.abs(numero - giocatoreB);
+
+if(giocatoreA === numero){
+  console.log('Numero Casuale Generato:' + numero + '; il giocatore 1 ha azzeccato il numero casuale');
+} else if(giocatoreB === numero){
+  console.log('Numero Casuale Generato:' + numero + '; il giocatore 2 ha azzeccato il numero casuale');
+} else if(diffA < diffB){
+  console.log('Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!');
+} else{
+  console.log('Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 2 si è avvicinato di più!');
+}
