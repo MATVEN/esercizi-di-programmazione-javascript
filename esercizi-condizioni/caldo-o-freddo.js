@@ -9,3 +9,61 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var a = 10
+var b = -2
+var c = 31
+var d = 22
+var e = 15
+var f = -6
+var g = 7
+var gCalda = Math.max(a, b, c, d, e, f, g);
+var gFredda = Math.min(a, b, c, d, e, f, g);
+
+switch(gCalda){   
+  case a:
+    console.log('Giornata più calda: ' + a + '°');
+    break;
+  case b:
+    console.log('Giornata più calda: ' + b + '°');
+    break;
+  case c:
+    console.log('Giornata più calda: ' + c + '°');
+    break;
+  case d:
+    console.log('Giornata più calda: ' + d + '°');
+    break;
+  case e:
+    console.log('Giornata più calda: ' + e + '°');
+    break;
+  case f:
+    console.log('Giornata più calda: ' + f + '°');
+    break;
+  case g:
+    console.log('Giornata più calda: ' + g + '°');
+    break;
+}
+
+switch(gFredda){   
+  case a:
+    console.log('Giornata più calda: ' + a + '°');
+    break;
+  case b:
+    console.log('Giornata più calda: ' + b + '°');
+    break;
+  case c:
+    console.log('Giornata più calda: ' + c + '°');
+    break;
+  case d:
+    console.log('Giornata più calda: ' + d + '°');
+    break;
+  case e:
+    console.log('Giornata più calda: ' + e + '°');
+    break;
+  case f:
+    console.log('Giornata più calda: ' + f + '°');
+    break;
+  case g:
+    console.log('Giornata più calda: ' + g + '°');
+    break;
+}
