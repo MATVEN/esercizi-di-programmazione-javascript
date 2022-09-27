@@ -22,9 +22,10 @@
 var tabella='';
 var limit = 101;
 
-	for(var i=1; i<limit; i++){
-		tabella += i + ' ';
-		if(i % 10 == 0) tabella += '\n';
-	}
-	console.log(tabella);
+for(var i=1; i<limit; i++){
+	tabella += i + ' ';
+	if(i % 10 == 0) tabella += '\n';
+}
+	
+console.log(tabella);
 
