@@ -20,9 +20,9 @@
   http://www.imparareaprogrammare.it
 */
 var tabella='';
-var limit = 101;
+var limit = 100;
 
-for(var i=1; i<limit; i++){
+for(var i=1; i<=limit; i++){
 	tabella += i + ' ';
 	if(i % 10 == 0) tabella += '\n';
 }
