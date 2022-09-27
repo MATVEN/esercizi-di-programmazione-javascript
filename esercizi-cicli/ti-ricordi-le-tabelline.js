@@ -13,7 +13,7 @@ var numero = Math.floor(Math.random() * 11);
 var tavola = '';
 
 for (var i = 0; i < 11; i++) {
-  tavola += numero * i + ' ';
+  tavola += numero * i + ' - ';
   if(i % 10 == 0) tavola += numero * i;
 }
 
