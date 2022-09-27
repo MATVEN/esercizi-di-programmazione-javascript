@@ -27,7 +27,7 @@ for (var i = 0; i < tiri; i++) {
 }
 
 if(gUno == gDue){
-  console.log('La partita termina in parità, entrambi hanno totalizzato: ' + gUno + ' punti');
+	console.log('La partita termina in parità, entrambi hanno totalizzato: ' + gUno + ' punti');
 } else if(gUno < gDue){
 	console.log('Il giocatore2 vince! Ha totalizzato: ' + gDue + ' punti\nIl giocatore1 ha totalizzato: ' + gUno + ' punti');
 } else{
