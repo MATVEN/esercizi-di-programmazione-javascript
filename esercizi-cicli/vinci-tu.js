@@ -14,3 +14,22 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var gUno = 0;
+var gDue = 0;
+var tiri = 3;
+var dadoGUno = Math.floor(Math.random() * (6 - 1 + 1) ) + 1;
+var dadoGDue = Math.floor(Math.random() * (6 - 1 + 1) ) + 1;
+
+for (var i = 0; i < tiri; i++) {
+  gUno += dadoGUno
+  gDue += dadoGDue
+}
+
+if(gUno == gDue){
+  console.log('La partita termina in parità, entrambi hanno totalizzato: ' + gUno + ' punti');
+} else if(gUno < gDue){
+	console.log('Il giocatore2 vince! Ha totalizzato: ' + gDue + ' punti\nIl giocatore1 ha totalizzato: ' + gUno + ' punti');
+} else{
+	console.log('Il giocatore1 vince! Ha totalizzato: ' + gUno + ' punti\nIl giocatore2 ha totalizzato: ' + gDue + ' punti');
+}
