@@ -1,6 +1,6 @@
-/*
-  Ti ricordi le tabelline?
+/*Ti ricordi le tabelline?
   Scrivi un programma che dato un numero stampi la tabellina corrispondente.
+  
 
   Esempio:
     Input: 5
@@ -8,3 +8,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var numero = Math.floor(Math.random() * 11);
+var tavola = '';
+
+for (var i = 0; i < 11; i++) {
+  tavola += numero * i + ' ';
+  if(i % 10 == 0) tavola += numero * i;
+}
+
+console.log(tavola);
