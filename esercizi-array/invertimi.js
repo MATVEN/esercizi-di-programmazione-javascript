@@ -16,6 +16,8 @@
   http://www.imparareaprogrammare.it
 */
 
+/* METODO 1 */
+
 var n = 5;
 var arr = [];
 
@@ -25,3 +27,15 @@ for (i = 0; i < n; i++) {
 }
 
 console.log('Array ottenuto: ' + arr + ' - Array invertito: ' + arr.reverse());
+
+/* METODO 2 */
+
+var n = 5;
+var arr = [];
+arr[0] = Math.round(Math.random() * 100 + 1);
+arr[1] = Math.round(Math.random() * 100 + 1);
+arr[2] = Math.round(Math.random() * 100 + 1);
+arr[3] = Math.round(Math.random() * 100 + 1);
+arr[4] = Math.round(Math.random() * 100 + 1);
+
+console.log(arr + ' - ' + arr[4], arr[3], arr[2], arr[1], arr[0]);
