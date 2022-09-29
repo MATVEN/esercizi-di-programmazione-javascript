@@ -12,3 +12,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var arrNum = [7, 15, 10, 1, 4]
+var somma = arrNum[0] + arrNum[1] + arrNum[2] + arrNum[3] + arrNum[4]
+var media = somma / arrNum.length
+var valMin = arrNum.filter(function filteredNumb (number) {  
+    return number < media;  
+})
+
+console.log('Media: ' + media + ' - Valori Minori: ' + valMin)
