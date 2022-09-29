@@ -7,3 +7,20 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 3;
+var matrice = [];
+
+matrice[0] = [];
+matrice[1] = [];
+matrice[2] = [];
+
+for (i = 0; i < n; i++) {
+  num = Math.round(Math.random()*100 + 1);
+  matrice[0].push(num);
+  num = Math.round(Math.random()*100 + 1);
+  matrice[1].push(num);
+  num = Math.round(Math.random()*100 + 1);
+  matrice[2].push(num);
+}
+console.log(matrice);
