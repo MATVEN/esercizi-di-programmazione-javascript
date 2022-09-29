@@ -8,6 +8,8 @@
   http://www.imparareaprogrammare.it
 */
 
+/* METODO 1 */
+
 var n = 3;
 var matrice = [];
 
@@ -23,4 +25,24 @@ for (i = 0; i < n; i++) {
   num = Math.round(Math.random()*100 + 1);
   matrice[2].push(num);
 }
+console.log(matrice);
+
+/* METODO 2 */
+
+var matrice = [];
+
+matrice[0] = [];
+matrice[1] = [];
+matrice[2] = [];
+
+matrice[0][0] = num = Math.round(Math.random()*100 + 1);
+matrice[0][1] = num = Math.round(Math.random()*100 + 1);
+matrice[0][2] = num = Math.round(Math.random()*100 + 1);
+matrice[1][0] = num = Math.round(Math.random()*100 + 1);
+matrice[1][1] = num = Math.round(Math.random()*100 + 1);
+matrice[1][2] = num = Math.round(Math.random()*100 + 1);
+matrice[2][0] = num = Math.round(Math.random()*100 + 1);
+matrice[2][1] = num = Math.round(Math.random()*100 + 1);
+matrice[2][2] = num = Math.round(Math.random()*100 + 1);
+
 console.log(matrice);
