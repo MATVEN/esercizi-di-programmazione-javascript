@@ -15,3 +15,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 5;
+var arr = [];
+
+for (i = 0; i < n; i++) {
+  num = Math.round(Math.random()*100 + 1);
+  arr.push(num);
+}
+
+console.log('Array ottenuto: ' + arr + ' - Array invertito: ' + arr.reverse());
