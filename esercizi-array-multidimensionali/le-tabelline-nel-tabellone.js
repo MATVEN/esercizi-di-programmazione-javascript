@@ -11,3 +11,20 @@
     
   http://www.imparareaprogrammare.it
 */
+
+var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var res = [];
+
+for(var x = 0; x <= arr.length; x++){
+  var mUno = arr[x-1];
+  res[mUno] = [];
+  console.log(mUno);
+  for(var y = 0; y <= arr.length; y++){
+    var mDue = arr[y-1];
+    res[mUno].push(mUno * mDue);
+    console.log(mDue);
+  }
+  res[mUno].join(' | ');
+}
+
+console.log(arr + '\n' + res.join('\n'));
