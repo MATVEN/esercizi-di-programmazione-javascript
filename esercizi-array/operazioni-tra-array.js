@@ -34,12 +34,12 @@ for (var i = 1; i < n; i++) {
 }
 
 for(var i = 0; i < n - 1; i++){
-		if(operazione == 'addizione') risultato[i] = arrUno[i] + arrDue[i];
-		else if(operazione == 'sottrazione') risultato[i] = arrUno[i] - arrDue[i];
-		else if(operazione == 'moltiplicazione') risultato[i] = arrUno[i] * arrDue[i];
-		else{ 
-      risultato[i] = Math.round(arrUno[i] / arrDue[i]*100)/100;
-    }
+	if(operazione == 'addizione') risultato[i] = arrUno[i] + arrDue[i];
+	else if(operazione == 'sottrazione') risultato[i] = arrUno[i] - arrDue[i];
+	else if(operazione == 'moltiplicazione') risultato[i] = arrUno[i] * arrDue[i];
+	else{ 
+      		risultato[i] = Math.round(arrUno[i] / arrDue[i]*100)/100;
 	}
+}
 
 console.log(arrUno + '\n' + arrDue + '\n' + risultato);
