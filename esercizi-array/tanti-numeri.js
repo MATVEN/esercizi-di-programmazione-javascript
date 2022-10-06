@@ -13,8 +13,13 @@
   http://www.imparareaprogrammare.it
 */
 var arrNum = [7, 15, 10, 1, 4]
-var somma = arrNum[0] + arrNum[1] + arrNum[2] + arrNum[3] + arrNum[4]
+var somma = 0;
 var media = somma / arrNum.length
+
+for (let i = 0; i < arrNUm.length; i++) {
+    somma += arrNUm[i];
+}
+
 var valMin = arrNum.filter(function filteredNumb (number) {  
     return number < media;  
 })
