@@ -15,12 +15,12 @@
 var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 var res = [];
 
-for(var x = 0; x <= arr.length-1; x++){
-  var mUno = arr[x];
+for(var i = 0; i <= arr.length-1; i++){
+  var mUno = arr[i];
   res[mUno] = [];
   console.log(mUno);
-  for(var y = 0; y <= arr.length-1; y++){
-    var mDue = arr[y];
+  for(var j = 0; j <= arr.length-1; j++){
+    var mDue = arr[j];
     res[mUno].push(mUno * mDue);
     console.log(mDue);
   }
@@ -28,3 +28,34 @@ for(var x = 0; x <= arr.length-1; x++){
 }
 
 console.log(arr + '\n' + res.join('\n'));
+
+/* METODO 2 */
+
+var arrUno = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var arrDue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var tabellone = [];
+
+
+for(var i = 0; i <= arrUno.length-1; i++){
+  var mUno = arrUno[i];
+  for(var j = 0; j <= arrDue.length-1; j++){
+    var mDue = arrDue[j];
+    tabellone.push(mUno * mDue);
+  }
+}
+
+console.log(arrUno + '\n' + tabellone.join('\n'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
