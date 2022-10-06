@@ -31,20 +31,9 @@ console.log(arr + '\n' + res.join('\n'));
 
 /* METODO 2 */
 
-var arrUno = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-var arrDue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var arr = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
 var tabellone = [];
 
-
-for(var i = 0; i <= arrUno.length-1; i++){
-  var mUno = arrUno[i];
-  for(var j = 0; j <= arrDue.length-1; j++){
-    var mDue = arrDue[j];
-    tabellone.push(mUno * mDue);
-  }
-}
-
-console.log(arrUno + '\n' + tabellone.join('\n'));
 
 
 
