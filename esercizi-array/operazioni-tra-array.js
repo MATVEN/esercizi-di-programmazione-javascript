@@ -19,3 +19,27 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 10;
+var arrUno = [];
+var arrDue = [];
+var operazione = 'addizione';
+var risultato = [];
+
+for (i = 1; i < n; i++) {
+  num = Math.round(Math.random()*10 + 1);
+  arrUno.push(num);
+  num = Math.round(Math.random()*10 + 1);
+  arrDue.push(num);
+}
+
+for(i=0; i<n; i++){
+		if(operazione == 'addizione') risultato[i] = arrUno[i] + arrDue[i];
+		else if(operazione == 'sottrazione') risultato[i] = arrUno[i] - arrDue[i];
+		else if(operazione == 'moltiplicazione') risultato[i] = arrUno[i] * arrDue[i];
+		else{ 
+      risultato[i] = Math.round(arrUno[i] / arrDue[i]*100)/100;
+    }
+	}
+
+console.log(arrUno + '\n' + arrDue + '\n' + risultato);
