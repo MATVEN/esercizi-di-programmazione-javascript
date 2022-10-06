@@ -26,14 +26,14 @@ var arrDue = [];
 var operazione = 'addizione';
 var risultato = [];
 
-for (i = 1; i < n; i++) {
+for (var i = 1; i < n; i++) {
   num = Math.round(Math.random()*10 + 1);
   arrUno.push(num);
   num = Math.round(Math.random()*10 + 1);
   arrDue.push(num);
 }
 
-for(i=0; i<n; i++){
+for(var i = 0; i < n - 1; i++){
 		if(operazione == 'addizione') risultato[i] = arrUno[i] + arrDue[i];
 		else if(operazione == 'sottrazione') risultato[i] = arrUno[i] - arrDue[i];
 		else if(operazione == 'moltiplicazione') risultato[i] = arrUno[i] * arrDue[i];
