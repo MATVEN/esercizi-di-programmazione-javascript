@@ -11,20 +11,18 @@
 /* METODO 1 */
 
 var n = 3;
+var m = 3;
 var matrice = [];
 
-matrice[0] = [];
-matrice[1] = [];
-matrice[2] = [];
-
-for (i = 0; i < n; i++) {
-  num = Math.round(Math.random()*100 + 1);
-  matrice[0].push(num);
-  num = Math.round(Math.random()*100 + 1);
-  matrice[1].push(num);
-  num = Math.round(Math.random()*100 + 1);
-  matrice[2].push(num);
+for(var i = 0; i < n; i++){
+  arrN = [];
+  matrice.push(arrN);
+  for(var j = 0; j < m; j++){
+    num = Math.round(Math.random()*100 + 1);
+    arrN.push(num)[j];
+  }
 }
+
 console.log(matrice);
 
 /* METODO 2 */
