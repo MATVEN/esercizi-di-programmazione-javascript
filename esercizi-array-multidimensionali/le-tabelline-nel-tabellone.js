@@ -31,20 +31,13 @@ console.log(arr + '\n' + res.join('\n'));
 
 /* METODO 2 */
 
-var arr = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
+var matrice = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
 var tabellone = [];
 
+for(var i = 0; i < matrice.length; i++){
+  for(var j = 0; j < matrice[i].length; j++){
+    
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(tabellone);
