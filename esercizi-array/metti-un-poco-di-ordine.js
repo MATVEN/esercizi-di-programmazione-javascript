@@ -15,3 +15,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var array = [3, 7, -6, 5, 8, 1, 2, 10, 6, -9];
+
+for(var i = 0; i < array.length; i++){
+  for(var j = 0; j < i; j++){
+    if(array[i] < array[j]){
+      var x = array[i];
+      array[i] = array[j];
+      array[j] = x;
+    }
+  }
+}
+
+console.log(array);
