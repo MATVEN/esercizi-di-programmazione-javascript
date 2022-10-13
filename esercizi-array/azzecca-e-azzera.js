@@ -12,3 +12,30 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 100;
+var array = [];
+
+for (var i = 1; i < n; i++) {
+  num = Math.round(Math.random()*50 + 1);
+  array.push(num);
+}
+
+var flag = true;
+while(flag){
+  console.log("Array: " + array);
+	console.log("flag: "+flag);
+	do{
+    var risposta = parseInt(prompt("Immetti un valore\n maggiore di 1\ne minore di 50"));
+  }while(risposta < 2 || risposta > 50);
+  for(var i=0; i < n; i++){
+    for(j=risposta; j < 51; j += risposta){
+      if(array[i] == j) array[i] = 0;
+    }
+  }
+  flag=false;
+  for(var j=0; j < n; j++){
+    if(array[j] > 0)  flag = true;
+  }
+}
+
