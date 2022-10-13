@@ -18,11 +18,9 @@ var res = [];
 for(var i = 0; i <= arr.length-1; i++){
   var mUno = arr[i];
   res[mUno] = [];
-  console.log(mUno);
   for(var j = 0; j <= arr.length-1; j++){
     var mDue = arr[j];
     res[mUno].push(mUno * mDue);
-    console.log(mDue);
   }
   res[mUno].join(' | ');
 }
@@ -31,8 +29,30 @@ console.log(arr + '\n' + res.join('\n'));
 
 /* METODO 2 */
 
+var tabelline = [];
+	for(var i=0; i<10; i++){
+		tabelline[i] = [];
+	}
+	
+	var tabellone = 'x';
+	for(j=0; j<11; j++){
+			tabellone += ' | ' + j;
+	}
+	tabellone += '\n';
+	
+	for(i=0; i<11; i++){
+		tabellone += i;
+		for(j=0; j<11; j++){
+			tabellone += ' | ' + i*j;
+		}
+		tabellone += '\n';
+	}
+	console.log(tabellone);
+
+/* METODO 3 */
+
 var matrice = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
-var tabellone = [];
+var tabellone = '';
 
 for(var i = 0; i < matrice.length; i++){
   for(var j = 0; j < matrice[i].length; j++){
