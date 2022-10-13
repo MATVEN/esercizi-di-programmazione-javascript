@@ -21,3 +21,38 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 2;
+var m = 3;
+var matrice = [];
+
+for(var i=0; i<n; i++){
+  matrice[i] = [];
+}
+
+for(i = 0; i < n; i++){
+  for(j = 0; j < m; j++){
+    matrice[i][j] = Math.floor(Math.random()*100+1);
+  }
+}
+
+var matriceR = [];
+var matriceC = [];
+
+for(i = 0; i < n; i++){
+  matriceR[i]=0;
+  for(j = 0; j < m; j++){
+    matriceR[i] += matrice[i][j];
+  }
+}
+
+for(j = 0; j < m; j++){
+  matriceC[j]=0;
+  for(i = 0; i < n; i++){
+    matriceC[j] += matrice[i][j];
+  }
+}
+
+console.log(matrice);
+console.log(matriceR);
+console.log(matriceC);
