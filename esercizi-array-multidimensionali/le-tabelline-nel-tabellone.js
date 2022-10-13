@@ -30,24 +30,26 @@ console.log(arr + '\n' + res.join('\n'));
 /* METODO 2 */
 
 var tabelline = [];
-	for(var i=0; i<10; i++){
-		tabelline[i] = [];
-	}
-	
-	var tabellone = 'x';
-	for(j=0; j<11; j++){
-			tabellone += ' | ' + j;
+for(var i = 0; i < 10; i++){
+	tabelline[i] = [];
+}
+
+var tabellone = 'x';
+for(j = 0; j < 11; j++){
+	tabellone += ' | ' + j;
+}
+
+tabellone += '\n';
+
+for(i = 0; i < 11; i++){
+	tabellone += i;
+	for(j = 0; j < 11; j++){
+		tabellone += ' | ' + i*j;
 	}
 	tabellone += '\n';
-	
-	for(i=0; i<11; i++){
-		tabellone += i;
-		for(j=0; j<11; j++){
-			tabellone += ' | ' + i*j;
-		}
-		tabellone += '\n';
-	}
-	console.log(tabellone);
+}
+
+console.log(tabellone);
 
 /* METODO 3 */
 
