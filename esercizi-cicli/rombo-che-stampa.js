@@ -20,7 +20,7 @@
 var risposta = '';
 var vettore = Array();
 var nDispari = 5;
-if(nDispari %2 ==0) nDispari++;
+if(nDispari %2 == 0) nDispari++;
 var copiaNumeroDispari = nDispari;
 	
 var i = 1; //i indica il numero di pallette
