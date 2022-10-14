@@ -45,3 +45,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var giorni = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
+var nGiorni = 31;
+
+for(var i =0; i < nGiorni; ){
+
+}
