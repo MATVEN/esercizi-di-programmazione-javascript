@@ -30,6 +30,23 @@ console.log('Array ottenuto: ' + arr + ' - Array invertito: ' + arr.reverse());
 
 /* METODO 2 */
 
+var vettore1 = [];
+var vettore2 = [];
+var n = 5;
+for(var i = 0; i < n; i++){
+	vettore1[i] = Math.floor(Math.random()*20 + 1);
+}
+
+i--;
+
+for(var j = 0; j < n; j++){
+	vettore2[j] = vettore1[i];
+	i--;
+}
+console.log(vettore1+'\n'+vettore2);
+
+/* METODO 3 */
+
 var n = 5;
 var arr = [];
 arr[0] = Math.round(Math.random() * 100 + 1);
@@ -39,3 +56,4 @@ arr[3] = Math.round(Math.random() * 100 + 1);
 arr[4] = Math.round(Math.random() * 100 + 1);
 
 console.log(arr + ' - ' + arr[4], arr[3], arr[2], arr[1], arr[0]);
+
