@@ -18,9 +18,6 @@ var a = Math.round(Math.random()*100);
 var b = Math.round(Math.random()*100);
 var c = Math.round(Math.random()*100);
 	
-var grande = maggiore(a,b,c);
-var piccolo = minore(a,b,c)
-	
 function maggiore(a,b,c){
   var max = a;
 	if(max < b) max = b;
@@ -35,4 +32,33 @@ function minore(a,b,c){
 	return min;
 }
 	
-console.log(grande, piccolo);
+console.log(maggiore(a,b,c), minore(a,b,c));
+
+
+/* VARIANTE */
+
+var n = Math.round(Math.random() * 7) + 3;
+var arr = [];
+
+for (var i = 1; i < n + 1; i++) {
+	num = Math.round(Math.random() * 100 + 1);
+	arr.push(num);
+}
+
+function maggiore(arr){
+	var max = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(max < arr[i]) max = arr[i];
+	}
+	return max;
+}
+
+function minore(arr){
+	var min = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(min > arr[i]) min = arr[i];
+	}
+	return min;
+}
+
+console.log('N: ' + n + '\n' + 'Array: ' + arr + '\n' + 'Maggiore: ' ,maggiore(arr) + '\n' + 'Minore:' ,minore(arr));
