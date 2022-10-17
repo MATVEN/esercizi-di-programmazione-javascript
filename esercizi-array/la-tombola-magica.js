@@ -25,7 +25,7 @@ var arrUno = [];
 var arrDue = [23,73,52,42,27,2,10,67,80,39];
 
 for(var i = 0; i < n; i++){
-	num = Math.round(Math.random()*15 + 1);
+	num = Math.round(Math.random()*90);
 	flag = true;
 	for(var j = 0; j < arrUno.length; j++){
 	  if(arrUno[j] == num)	flag = false;
