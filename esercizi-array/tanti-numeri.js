@@ -16,7 +16,7 @@ var arrNum = [7, 15, 10, 1, 4]
 var somma = 0;
 var media = somma / arrNum.length
 
-for (let i = 0; i < arrNUm.length; i++) {
+for (var i = 0; i < arrNUm.length; i++) {
     somma += arrNUm[i];
 }
 
