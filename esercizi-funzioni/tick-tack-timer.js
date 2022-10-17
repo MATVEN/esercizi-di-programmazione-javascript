@@ -14,3 +14,18 @@
             
   http://www.imparareaprogrammare.it
 */
+
+function contoAllaRovescia(){
+ 
+  var n = Math.round(Math.random() * 10) + 1;
+  var timer = setInterval(function() {
+    n--;
+    console.log(n);
+    if (n <= 0) {
+      console.log("Fatto!");
+      clearInterval(timer);
+    }
+  },1000);
+} 
+
+console.log(contoAllaRovescia());
