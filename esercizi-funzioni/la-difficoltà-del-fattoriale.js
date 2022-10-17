@@ -12,3 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = Math.round(Math.random() * 9) + 1;
+	
+function fattoriale(n){
+  var risultato = 1
+	for(var i = 2; i < n + 1; i++){
+    risultato *= i;
+  }
+  return risultato;
+}
+
+console.log('n:' + n + '\n' +' Fattoriale: ' + fattoriale(n));
