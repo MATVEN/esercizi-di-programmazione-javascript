@@ -16,3 +16,18 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function sameArg(argUno, argDue){
+  
+  argUno = Math.round(Math.random()*10 + 1);
+  argDue = Math.round(Math.random()*10 + 1);
+  console.log(argUno + ' - ' + argDue)
+  
+  if(argUno === argDue){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(sameArg())
