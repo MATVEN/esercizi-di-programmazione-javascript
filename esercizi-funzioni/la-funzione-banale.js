@@ -17,11 +17,11 @@
   http://www.imparareaprogrammare.it
 */
 
+argUno = Math.round(Math.random()*10 + 1);
+argDue = Math.round(Math.random()*10 + 1);
+console.log(argUno + ' - ' + argDue);
+
 function sameArg(argUno, argDue){
-  
-  argUno = Math.round(Math.random()*10 + 1);
-  argDue = Math.round(Math.random()*10 + 1);
-  console.log(argUno + ' - ' + argDue)
   
   if(argUno === argDue){
     return true;
@@ -30,4 +30,4 @@ function sameArg(argUno, argDue){
   }
 }
 
-console.log(sameArg())
+console.log(sameArg(argUno, argDue))
