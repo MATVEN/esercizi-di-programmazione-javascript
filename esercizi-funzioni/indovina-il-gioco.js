@@ -14,3 +14,29 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var number = Math.round(Math.random()*10 + 1);
+	
+function verify(number){
+  if(number >= 1 && number <= 7){
+    return true
+  }else{
+    return false;
+  }
+}
+
+console.log(number + ' - ' + verify(number))
+
+var result = verify(number);
+
+function cerca(number){
+  var week = ['Lunedi','Martedi','Mercoledi','Giovedi','Venerdi','Sabato','Domenica'];
+  return(week[number-1]);
+}
+
+if(result){
+  var dWeek = cerca(number,result);
+  console.log(dWeek);
+}else{
+  console.log("Peccato, non posso indovinare il giorno.");
+}
