@@ -8,3 +8,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var numero = Math.floor(Math.random() * 101);
+console.log(numero);
+
+function numeroCasuale(numero){
+  var nCasuale = Math.floor(Math.random() * numero);
+  if (nCasuale > 0 && nCasuale < numero){
+    return nCasuale;
+  }else{
+    return false;
+  }
+}
+
+console.log(numeroCasuale(numero));
