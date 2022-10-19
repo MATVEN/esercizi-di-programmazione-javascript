@@ -17,9 +17,9 @@ const d = -2;
 
 if(a >= b && a >= c && a >= d){
   console.log("Maggiore = " + a);
-}elseif(b >= c && b >= d){
+}else if(b >= c && b >= d){
   console.log("Maggiore = " + b);
-}elseif(c >= d){
+}else if(c >= d){
   console.log("Maggiore = " + c);
 }else{
   console.log("Maggiore = " + d);
@@ -27,9 +27,9 @@ if(a >= b && a >= c && a >= d){
 
 if(a <= b && a <= c && a <= d){
   console.log("Minore = " + a);
-}elseif(b <= c && b <= d){
+}else if(b <= c && b <= d){
   console.log("Minore = " + b);
-}elseif(c <= d){
+}else if(c <= d){
   console.log("Minore = " + c);
 }else{
   console.log("Minore = " + d);
@@ -38,9 +38,9 @@ if(a <= b && a <= c && a <= d){
 //Alternativo
 if(! a >= b && ! a >= c && ! a >= d){
   console.log("Minore = " + a);
-}elseif(! b >= c && ! b >= d){
+}else if(! b >= c && ! b >= d){
   console.log("Minore = " + b);
-}elseif(! c >= d){
+}else if(! c >= d){
   console.log("Minore = " + c);
 }else{
   console.log("Minore = " + d);
