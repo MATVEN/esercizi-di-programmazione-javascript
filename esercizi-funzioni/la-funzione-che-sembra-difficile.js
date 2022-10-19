@@ -10,3 +10,20 @@
     
   http://www.imparareaprogrammare.it
 */
+
+var n = Math.floor(Math.random() * 99999) + 1;
+var k = Math.floor(Math.random() * 5);
+console.log(n + ' - ' + k);
+
+function estrai(n, k){
+  var string = String(n);
+  var length = string.length;
+  
+  if(k > string.length){
+    return 0;
+  }else{
+    return string.substr(-k,1);
+  }
+}
+
+console.log(estrai(n, k));
