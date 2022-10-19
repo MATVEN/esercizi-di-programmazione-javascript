@@ -14,3 +14,45 @@
 
   http://www.imparareaprogrammare.it
 */
+
+/* METODO 1 */
+
+var frase = 'eri un nano non annuire.'
+var parola = frase.replace(/\W/g, "");
+console.log(parola);
+
+function invertiParola(parola){
+  var strInversa = parola.split('').reverse().join('');  
+  
+  if(parola == strInversa){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(invertiParola(parola));
+
+/* METODO 2 */
+
+var frase = 'eri un nano non annuire.'
+var parola = frase.replace(/\W/g, "");
+console.log(parola);
+  
+function invertiParola(parola) {
+  var parolaInversa = '';
+  var i = parola.length - 1;
+  
+  while (i >= 0) {
+    parolaInversa += parola[i];
+    i--;
+  }
+
+  if(parola == parolaInversa){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(invertiParola(parola));
