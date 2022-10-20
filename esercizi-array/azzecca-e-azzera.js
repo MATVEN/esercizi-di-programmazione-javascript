@@ -29,7 +29,7 @@ while(flag){
 		var risposta = parseInt(prompt("Immetti un valore\n maggiore di 1\ne minore di 50"));
 	}while(risposta < 2 || risposta > 50);
 	for(var i = 0; i < n; i++){
-		for(j=risposta; j < 51; j += risposta){
+		for(j = risposta; j < 51; j += risposta){
 			if(array[i] == j) array[i] = 0;
 		}
 	}
