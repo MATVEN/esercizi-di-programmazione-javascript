@@ -34,35 +34,32 @@ function vicinanzaNumeri(a, b ,n){
 console.log(vicinanzaNumeri(a, b ,n));
 
 /* VARIANTE */
-var n = Math.floor(Math.random() * 100);
+var n = Math.floor(Math.random() * 101);
 console.log('N: ' + n);
 
 function inovinaNumero(n){
-  
-  var flag = true;
-  while(flag){
-    do{
-      var giocatore1 = parseInt(prompt("Giocatore 1 scrivi un numero\n maggiore di 1\ne minore di 100"));
-      var giocatore2 = parseInt(prompt("Giocatore 2 scrivi un numero\n maggiore di 1\ne minore di 100"));
+    
+  do{
+    var giocatore1 = parseInt(prompt("Giocatore 1 scrivi un numero\n maggiore di 1\ne minore di 100"));
+    var giocatore2 = parseInt(prompt("Giocatore 2 scrivi un numero\n maggiore di 1\ne minore di 100"));
 
-      var diffA = Math.abs(n - giocatore1);
-      var diffB = Math.abs(n - giocatore2);
+    var diffA = Math.abs(n - giocatore1);
+    var diffB = Math.abs(n - giocatore2);
 
-      if(diffA < diffB){
-        alert("Il giocatore 1 ci è andato vicino!");
-      }else if(diffB < diffA){
-        alert("Giocatore 2 ci è andato vicino!");
-      }
-    }while(
-      giocatore1 == n || giocatore2 == n
-    )
+    if(diffA < diffB && diffA > 0){
+      alert("Il giocatore 1 ci è andato vicino!");
+    }else if(diffB < diffA && diffB > 0){
+      alert("Giocatore 2 ci è andato vicino!");
+    }
+  }while(
+    giocatore1 != n || giocatore2 != n
+  )
 
     if(giocatore1 == n){
-      return prompt('Il giocatore 1  ha vinto!');
+      return alert('Il giocatore 1  ha vinto!');
     }else if(giocatore2 == n){
-      return prompt("Il giocatore 2 ha vinto!");
+      return alert("Il giocatore 2 ha vinto!");
     }
-  }
 }
 
 console.log(inovinaNumero(n));
