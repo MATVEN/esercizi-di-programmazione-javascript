@@ -47,13 +47,15 @@ console.log(vettore1+'\n'+vettore2);
 
 /* METODO 3 */
 
-var n = 5;
+var n = Math.round(Math.random() * 10) + 1;
 var arr = [];
-arr[0] = Math.round(Math.random() * 100 + 1);
-arr[1] = Math.round(Math.random() * 100 + 1);
-arr[2] = Math.round(Math.random() * 100 + 1);
-arr[3] = Math.round(Math.random() * 100 + 1);
-arr[4] = Math.round(Math.random() * 100 + 1);
 
-console.log(arr + ' - ' + arr[4], arr[3], arr[2], arr[1], arr[0]);
+for (i = 0; i < n; i++) {
+  num = Math.round(Math.random()*100 + 1);
+  arr.push(num);
+}
+console.log('Array ottenuto: ' + arr);
 
+for (var i = arr.length - 1; i >= 0; i--) {
+    console.log(arr[i]);
+}
