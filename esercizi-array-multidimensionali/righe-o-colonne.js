@@ -22,8 +22,8 @@
   http://www.imparareaprogrammare.it
 */
 
-var n = 2;
-var m = 3;
+var n = Math.round(Math.random() * 10);
+var m = Math.round(Math.random() * 10);;
 var matrice = [];
 
 for(var i=0; i<n; i++){
