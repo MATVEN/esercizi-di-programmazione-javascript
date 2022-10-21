@@ -12,9 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
-var arrNum = [7, 15, 10, 1, 4]
+var arrNum = [];
+var n = Math.round(Math.random() * 10);
 var somma = 0;
 var media = somma / arrNum.length
+
+for(var i = 0; i < n; i++){
+    num = Math.round(Math.random() * 20);
+    arrNum.push(num)[i];
+}
+console.log(arrNum);
 
 for (var i = 0; i < arrNUm.length; i++) {
     somma += arrNUm[i];
