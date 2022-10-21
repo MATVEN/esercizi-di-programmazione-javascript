@@ -16,7 +16,7 @@
   http://www.imparareaprogrammare.it
 */
 
-var numero = 37;
+var numero = Math.floor(Math.random() * 101);
 
 if(numero % 2 == 0){
   console.log(1)
