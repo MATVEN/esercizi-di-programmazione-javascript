@@ -38,15 +38,59 @@ switch(giorno){
   case 4:
     console.log('Oggi è Giovedì');
     break;
-    case 1:
+  case 5:
     console.log('Oggi è Venerdì');
     break;
-  case 2:
+  case 6:
     console.log('Oggi è Sabato');
     break;
-  case 3:
+  case 7:
     console.log('Oggi è Domenica');
     break;
   default:
     console.log('Errore! Giorno della settimana non valido!');
+}
+/* VARIANTE */
+
+var mese = 4;
+
+switch(giorno){   
+  case 1:
+    console.log('Siamo nel mese di Gennaio');
+    break;
+  case 2:
+    console.log('Siamo nel mese di Febbraio');
+    break;
+  case 3:
+    console.log('Siamo nel mese di Marzo');
+    break;
+  case 4:
+    console.log('Siamo nel mese di Aprile');
+    break;
+  case 5:
+    console.log('Siamo nel mese di Maggio');
+    break;
+  case 6:
+    console.log('Siamo nel mese di Giugno');
+    break;
+  case 7:
+    console.log('Siamo nel mese di Luglio');
+    break;
+  case 8:
+    console.log('Siamo nel mese di Agosto');
+    break;
+  case 9:
+    console.log('Siamo nel mese di Settembre');
+    break;
+  case 10:
+    console.log('Siamo nel mese di Ottobre');
+    break;
+  case 11:
+    console.log('Siamo nel mese di Novembre');
+    break;
+  case 12:
+    console.log('Siamo nel mese di Dicembre');
+    break;
+  default:
+    console.log('Errore! Mese non valido!');
 }
