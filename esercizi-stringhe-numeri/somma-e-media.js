@@ -18,3 +18,5 @@ var e = 35;
 
 var somma = a + b + c + d + e;
 var media = somma / num;
+
+console.log('La somma è ' + somma + ' - ' + 'La media è ' + media)
