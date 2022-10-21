@@ -29,8 +29,8 @@
   http://www.imparareaprogrammare.it
 */
 
-var a = 5;
-var b = 8;
+var a = Math.floor(Math.random() * 101);
+var b = Math.floor(Math.random() * 101);
 var operazione = 'somma';
 
 
