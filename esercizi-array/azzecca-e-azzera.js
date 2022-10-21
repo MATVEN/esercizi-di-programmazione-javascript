@@ -24,7 +24,6 @@ for (var i = 1; i < n; i++) {
 var flag = true;
 while(flag){
 	console.log("Array: " + array);
-	console.log("flag: "+flag);
 	do{
 		var risposta = parseInt(prompt("Immetti un valore\n maggiore di 1\ne minore di 50"));
 	}while(risposta < 2 || risposta > 50);
