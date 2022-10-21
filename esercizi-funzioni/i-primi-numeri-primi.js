@@ -20,3 +20,31 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = Math.floor(Math.random() * 20);
+
+function isPrime(n) {
+    for ( var i = 2; i < n; i++ ) {
+        if ( n % i === 0 ) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(n + ' - ' + isPrime(n));
+
+function display(n) {
+  const primeNumber = [];
+  let i = 2;
+  while(primeNumber.length < n){
+    if(isPrime(i)){
+      primeNumber.push(i);
+    };
+    i = i === 2 ? i+1 : i+2;
+  };
+  return primeNumber;
+  console.log(primeNumber);
+}
+
+console.log(display(n));
