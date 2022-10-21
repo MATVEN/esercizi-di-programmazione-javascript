@@ -32,7 +32,7 @@ for(var i=0; i<n; i++){
 
 for(i = 0; i < n; i++){
   for(j = 0; j < m; j++){
-    matrice[i][j] = Math.floor(Math.random()*100+1);
+    matrice[i][j] = Math.floor(Math.random() * 100);
   }
 }
 
