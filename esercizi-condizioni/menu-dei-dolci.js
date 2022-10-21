@@ -22,7 +22,7 @@
   http://www.imparareaprogrammare.it
 */
 
-var scelta = 3;
+var scelta = Math.floor(Math.random() * 5);
 
 switch(scelta){   
   case 1:
