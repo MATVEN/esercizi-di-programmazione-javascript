@@ -18,8 +18,8 @@
   http://www.imparareaprogrammare.it
 */
 
-var n = 2;
-var m = 3;
+var n = Math.round(Math.random() * 5);;
+var m = Math.round(Math.random() * 5);;
 var matrice = [];
 var somma = 0;
 
