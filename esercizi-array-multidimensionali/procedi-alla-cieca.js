@@ -10,8 +10,8 @@
 
 /* METODO 1 */
 
-var n = 3;
-var m = 3;
+var n = Math.floor(Math.random() * 10);
+var m = Math.floor(Math.random() * 10);
 var matrice = [];
 
 for(var i = 0; i < n; i++){
