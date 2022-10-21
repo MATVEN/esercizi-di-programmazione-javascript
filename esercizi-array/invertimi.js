@@ -18,7 +18,7 @@
 
 /* METODO 1 */
 
-var n = 5;
+var n = Math.floor(Math.random() * 10);
 var arr = [];
 
 for (i = 0; i < n; i++) {
@@ -32,7 +32,7 @@ console.log('Array ottenuto: ' + arr + ' - Array invertito: ' + arr.reverse());
 
 var vettore1 = [];
 var vettore2 = [];
-var n = 5;
+var n = Math.floor(Math.random() * 10);
 for(var i = 0; i < n; i++){
 	vettore1[i] = Math.floor(Math.random()*20 + 1);
 }
