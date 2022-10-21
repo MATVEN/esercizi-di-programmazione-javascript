@@ -18,8 +18,20 @@
   http://www.imparareaprogrammare.it
 */
 
-var array = [[1, 2], [3, 4], [5, 6]];
+var array = [];
+var n = Math.floor(Math.random() * 10);
+var m = Math.floor(Math.random() * 10);
+console.log(n + ' - ' + m);
 var arrM = [];
+
+for(var i = 0; i < n; i++){
+  arrN = [];
+  array.push(arrN);
+  for(var j = 0; j < m; j++){
+    num = Math.round(Math.random() * 10);
+    arrN.push(num)[j];
+  }
+}
 
 for(let i = 0; i < array.length; i++){
   for(let j = 0; j < array[i].length; j++){
