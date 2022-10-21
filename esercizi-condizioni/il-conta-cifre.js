@@ -12,7 +12,7 @@
   http://www.imparareaprogrammare.it
 */
 
-var n = 26;
+var n = Math.floor(Math.random() * 9999);
 var nToString = n.toString();
 var nCifre = nToString.length;
 
