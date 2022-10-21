@@ -19,8 +19,8 @@
 */
 
 var array = [];
-var n = Math.floor(Math.random() * 10);
-var m = Math.floor(Math.random() * 10);
+var n = Math.floor(Math.random() * 5);
+var m = Math.floor(Math.random() * 5);
 console.log(n + ' - ' + m);
 var arrM = [];
 
