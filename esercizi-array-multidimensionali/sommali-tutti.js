@@ -18,8 +18,8 @@
   http://www.imparareaprogrammare.it
 */
 
-var n = Math.round(Math.random() * 5);;
-var m = Math.round(Math.random() * 5);;
+var n = Math.round(Math.random() * 5 + 1);;
+var m = Math.round(Math.random() * 5 + 1);
 var matrice = [];
 var somma = 0;
 
@@ -27,7 +27,7 @@ for(var i = 0; i < n; i++){
   arrN = [];
   matrice.push(arrN);
   for(var j = 0; j < m; j++){
-    num = Math.round(Math.random()*100 + 1);
+    num = Math.round(Math.random() * 100 + 1);
     arrN.push(num)[j];
   }
 }
