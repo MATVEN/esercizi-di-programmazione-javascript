@@ -29,11 +29,54 @@ var contatto = {
   compleanno: '2 Settembre'
 };
 
-var Rubrica = {
-  nome: ['Jacopo', 'Mattia', 'Federico', 'Stefano', 'Leonardo', 'Lorenzo', 'Andrea'],
-  cognome: ['Di Biagio', 'Scascitelli', 'Di Eugenio', 'Trinca', 'Visonà', 'Bragaglia', 'Raineri'],
-  cellulare: ['3471958970','3921921970','3311999870','3391785970','3201665970','3381995570','3331995971'],
-  mail: ['jacopo.db@hotmail.it','mattia.scascio@hotmail.it','fede.venadeughotmail.it','ste.trinca@hotmail.it','leo.vis@hotmail.it','lollo.brago@hotmail.it','andrea.ragno@hotmail.it'],
-  via: ['Via Stazione 7', 'Via Alleva 228', 'Via Matricia 26', 'Via Parma 47', 'Via Trenio 9', 'Via Cicero 34', 'Via Offerta 78', 'Via Oslo 337', 'Via Retro 10'],
-  compleanno: ['26 Febbraio', '20 Febbraio', '3 Dicembre', '12 Gennaio','27 Dicembre', '14 Agosto', '15 Giugno']
-};
+var rubrica = [
+  contatto1 = {
+    nome: 'Andrea',
+    cognome: 'Raineri',
+    cellulare: '3331995870',
+    mail: 'ragno@hotmail.it',
+    via: 'Via Allerite 56',
+    compleanno: '15 Giugno'
+  },
+  contatto2 = {
+    nome: 'Mattia',
+    cognome: 'Scacitelli',
+    cellulare: '3309995970',
+    mail: 'scacio@hotmail.it',
+    via: 'Via Ofander 7',
+    compleanno: '20 Febbraio'
+  },
+  contatto3 = {
+    nome: 'Federico',
+    cognome: 'Di Eugenio',
+    cellulare: '3331775970',
+    mail: 'deug@hotmail.it',
+    via: 'Via Giorizao 64',
+    compleanno: '3 Dicembre'
+  }
+];
+
+console.log(rubrica);
+
+contatto4 = {
+  nome: 'Leonardo',
+  cognome: 'Visonà',
+  cellulare: '3331276970',
+  mail: 'leovis@hotmail.it',
+  via: 'Via Franciastretta 38',
+  compleanno: '27 Dicembre'
+}
+
+rubrica.push(contatto4);
+console.log(rubrica);
+
+rubrica[1].cognome = 'Scascitelli'
+console.log(rubrica.contatto2);
+
+delete rubrica[0];
+console.log(rubrica);
+
+var found = rubrica.filter(e => e.nome === 'Leonardo');
+if (found.length > 0) {
+    console.log(found[0]);
+}
