@@ -19,3 +19,21 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var contatto = {
+  nome: 'Mattia',
+  cognome: 'Vena',
+  cellulare: '3331995970',
+  mail: 'mattia.vena@hotmail.it',
+  via: 'Via Pasturana 9',
+  compleanno: '2 Settembre'
+};
+
+var Rubrica = {
+  nome: ['Jacopo', 'Mattia', 'Federico', 'Stefano', 'Leonardo', 'Lorenzo', 'Andrea'],
+  cognome: ['Di Biagio', 'Scascitelli', 'Di Eugenio', 'Trinca', 'Visonà', 'Bragaglia', 'Raineri'],
+  cellulare: ['3471958970','3921921970','3311999870','3391785970','3201665970','3381995570','3331995971'],
+  mail: ['jacopo.db@hotmail.it','mattia.scascio@hotmail.it','fede.venadeughotmail.it','ste.trinca@hotmail.it','leo.vis@hotmail.it','lollo.brago@hotmail.it','andrea.ragno@hotmail.it'],
+  via: ['Via Stazione 7', 'Via Alleva 228', 'Via Matricia 26', 'Via Parma 47', 'Via Trenio 9', 'Via Cicero 34', 'Via Offerta 78', 'Via Oslo 337', 'Via Retro 10'],
+  compleanno: ['26 Febbraio', '20 Febbraio', '3 Dicembre', '12 Gennaio','27 Dicembre', '14 Agosto', '15 Giugno']
+};
