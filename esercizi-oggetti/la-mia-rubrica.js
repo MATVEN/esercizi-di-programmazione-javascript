@@ -56,7 +56,18 @@ var rubrica = [
   }
 ];
 
-console.log(rubrica);
+//Visualizziamo tutti i dati
+for (var i = 0; i < rubrica.length; i++){
+  console.log(rubrica[i]);
+}
+
+//Visualizzare singolarmente gli elementi di ciascun oggetto
+for (var i = 0; i < rubrica.length; i++){
+  console.log('oggetto ' + i);
+  for (var k in rubrica[i]){
+    console.log(rubrica[i][k]);
+  }
+}
 
 contatto4 = {
   nome: 'Leonardo',
