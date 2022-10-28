@@ -349,26 +349,41 @@ for (var i = 0; i < nNuoviFascicoli; i++){
   fascicoli.push(fascicolo);
 }
 
-function cambiaStatoDetenuto(id, stato) {
-   for (var i in fascicoli) {
-     if (fascicoli[i].id == id) {
-        fascicoli[i].stato = stato;
-        break;
-     }
-   }
-}
+console.log(fascicoli)
 
 var idDetenuto = prompt('Inserisci il codice identificativo del detenuto');
-var statoDetenzione = prompt('Inserisci lo stato di detenzione del detenuto');
+var modificaFascicolo = prompt('Vuoi modificare il fascicolo del detenuto');
 
-cambiaStatoDetenuto (idDetenuto, statoDetenzione);
-
-for (var i = 0; i < fascicoli.length; i++){
-  console.log(fascicoli[i]);
-}
-
-var filtro = prompt('Inserisci il nome o l\'alias del detenuto da cercare');
-var found = fascicoli.filter(e => e.aliasDetenuto === filtro);
-if (found.length > 0) {
-    console.log(found[0]);
+if(modificaFascicolo == 'Si'){
+  
+  function cambiaStatoDetenuto(id, stato) {
+    for (var i in fascicoli) {
+      if (fascicoli[i].id == id) {
+        fascicoli[i].stato = stato;
+        break;
+      }
+    }
+  }
+  
+  var statoDetenzione = prompt('Inserisci lo stato di detenzione del detenuto');
+  cambiaStatoDetenuto(idDetenuto, statoDetenzione);
+  
+  for (var i = 0; i < fascicoli.length; i++){
+    console.log(fascicoli[i]);
+  }
+  
+}else{
+  var cercaDetenuto = prompt('Vuoi aprire il fascicolo del detenuto');
+  
+  if(cercaDetenuto == 'Si'){
+    var filtro = prompt('Inserisci il nome o l\'alias del detenuto da cercare');
+    var found = fascicoli.filter(e => e.aliasDetenuto == filtro);
+    if (found.length > 0) {
+      console.log(found[0]);
+    }
+  }else{
+    for (var i = 0; i < fascicoli.length; i++){
+      console.log(fascicoli[i]);
+    }
+  }
 }
