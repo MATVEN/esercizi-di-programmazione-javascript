@@ -349,6 +349,20 @@ for (var i = 0; i < nNuoviFascicoli; i++){
   fascicoli.push(fascicolo);
 }
 
+function cambiaStatoDetenuto(id, stato) {
+   for (var i in fascicoli) {
+     if (fascicoli[i].id == id) {
+        fascicoli[i].stato = stato;
+        break;
+     }
+   }
+}
+
+var idDetenuto = prompt('Inserisci il codice identificativo del detenuto');
+var statoDetenzione = prompt('Inserisci lo stato di detenzione del detenuto');
+
+cambiaStatoDetenuto (idDetenuto, statoDetenzione);
+
 for (var i = 0; i < fascicoli.length; i++){
   console.log(fascicoli[i]);
 }
