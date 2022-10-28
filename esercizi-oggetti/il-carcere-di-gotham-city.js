@@ -43,7 +43,7 @@ function generateRandomString(iLen) {
 }
 
 var stringaRandomDetenuto = generateRandomString(24);
-var nNuoviDetenuti = prompt('Inserisci il numero di nuovi detenuti da inserire');
+var nNuoviDetenuti = prompt('Inserisci il numero di nuovi detenuti da schedare');
 
 //DETENUTI
 const detenuti = [
@@ -130,7 +130,7 @@ for (var i = 0; i < detenuti.length; i++){
 
 //GUARDIE
 
-var nNuoveGuardie = prompt('Inserisci il numero di nuove guardie da inserire');
+var nNuoveGuardie = prompt('Inserisci il numero di nuove guardie assunte');
 
 const guardie = [
     {
