@@ -115,7 +115,7 @@ const detenuti = [
 
 for (var i = 0; i < nNuoviDetenuti; i++){
   var detenuto = {
-    id: stringaRandom,
+    id: stringaRandomDetenuto,
     nome: prompt('Inserisci il nome del detenuto'),
     cognome: prompt('Inserisci il cognome del detenuto'),
     sesso: prompt('Inserisci il sesso del detenuto'),
@@ -339,7 +339,7 @@ const fascicoli = [
 
 for (var i = 0; i < nNuoviFascicoli; i++){
   var fascicolo = {
-    id: stringaRandom,
+    id: stringaRandomDetenuto,
     aliasDetenuto: prompt('Inserisci il nome o l\'alias del detenuto'),
     crimine: prompt('Inserisci il crimine commesso'),
     stato: 'In detenzione',
@@ -387,3 +387,24 @@ if(modificaFascicolo == 'Si'){
     }
   }
 }
+
+function riepilogoCarcere(guardie, detenuti, fascicoli){
+  
+  for (var i = 0; i < fascicoli.length; i++){
+    var foundEvasi = fascicoli.filter(e => e.stato === 'Evaso');
+    if (foundEvasi.length > 0) {
+      console.log(foundEvasi[i]);
+    }
+  }
+  
+  for (var i = 0; i < fascicoli.length; i++){
+    var foundDeceduti = fascicoli.filter(e => e.stato === 'Deceduto');
+    if (foundDeceduti.length > 0) {
+      console.log(foundDeceduti[i]);
+    }
+  }
+  
+  return guardie.length + '\n' + detenuti.length + '\n' + foundEvasi.length + '\n' + foundDeceduti.length
+}
+
+console.log(riepilogoCarcere(guardie, detenuti, fascicoli));
