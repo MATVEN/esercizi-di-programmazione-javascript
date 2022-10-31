@@ -63,7 +63,7 @@ for (var i = 0; i < rubrica.length; i++){
 
 //Visualizzare singolarmente gli elementi di ciascun oggetto
 for (var i = 0; i < rubrica.length; i++){
-  console.log('oggetto ' + i);
+  console.log('Contatto ' + i);
   for (var k in rubrica[i]){
     console.log(rubrica[i][k]);
   }
